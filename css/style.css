@@ -105,6 +105,7 @@ main {
 
                 &:hover {
                     background-color: lightblue;
+                    cursor: help;
                 }
             }
 
