@@ -38,9 +38,87 @@
             <code>git add .</code>
             <p>Para adicionar uma <strong>commit</strong><sup>1</sup>:</p>
             <code>git commit -m "texto descritivo da commit"</code>
-            <p><sup>1</sup> <em>Confira abaixo as boas práticas para criação de commits.</em></p>
+            <p class="footnotes"><sup>1</sup> <em>Confira abaixo as boas práticas para criação de commits.</em></p>
             <p>Para enviar o conteúdo do repositório local para o repositório remoto:</p>
-            <code>git push origin main</code>
+            <code>git push origin &lt;nome_da_branch&gt;</code>
+            <p>Ex.: <code>git push origin main</code></p>
+            <p>Para verificar o status do repositório:</p>
+            <code>git status</code>
+            <p>Para copiar um repositório remot para o seu computador:</p>
+            <code>git clone endereço_do_repositiorio_remoto.git</code>
+            <p>Para puxar alterações existentes em um repositório remoto:</p>
+            <code>git pull origin &lt;nome_da_branch&gt;</code>
+            <p>Ex.: <code>git pull origin main</code></p>
+            <p>Verificar qual a branch atual:</p>
+            <code>git branch</code>
+            <h2>Boas prátias em nomenclatura de commits</h2>
+            <p>O padrão mais utilizado no mercado hoje é o Conventional Commits. Ele estabelece uma estrutura simples
+                para tornar o
+                histórico de commits legível tanto para pessoas quanto para ferramentas de automação (como geração
+                automática de
+                changelogs e versionamento semântico).</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Quando Usar</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>feat</td>
+                        <td>Nova funcionalidade (feature)</td>
+                        <td>feat(auth): adiciona login com Google</td>
+                    </tr>
+                    <tr>
+                        <td>docs</td>
+                        <td>Alterações na documentação</td>
+                        <td>docs(readme): atualiza instruções de instalação</td>
+                    </tr>
+                    <tr>
+                        <td>fix</td>
+                        <td>Correção de um bug</td>
+                        <td>fix(checkout): corrige cálculo do frete com cupom</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Formatação de código (espaços, vírgulas) sem alterar lógica</td>
+                        <td>style(lint): aplica regras do ESLint no
+                            controller</td>
+                    </tr>
+                    <tr>
+                        <td>refactor</td>
+                        <td>Mudança no código que não corrige bug nem adiciona funcionalidade</td>
+                        <td>refactor(user): simplifica validação de e-mail</td>
+                    </tr>
+                    <tr>
+                        <td>perf</td>
+                        <td>Mudança que melhora a performance</td>
+                        <td>perf(db): adiciona índice na tabela de pedidos</td>
+                    </tr>
+                    <tr>
+                        <td>ci</td>
+                        <td>Alterações em arquivos de CI/CD (GitHub Actions, GitLab CI)</td>
+                        <td>ci(deploy): ajusta pipeline de staging</td>
+                    </tr>
+                    <tr>
+                        <td>chore</td>
+                        <td>Tarefas de manutenção, build ou atualização de dependências</td>
+                        <td>chore(deps): atualiza pacote axios para v1.6.0</td>
+                    </tr>
+                    <tr>
+                        <td>test</td>
+                        <td>Criação ou ajuste de testes unitários/integração</td>
+                        <td>test(cart): adiciona testes unitários para desconto</td>
+                    </tr>
+                    <tr>
+                        <td>build</td>
+                        <td>Mudanças no sistema de build ou scripts externos</td>
+                        <td>build(webpack): otimiza minificação do bundle</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer>
