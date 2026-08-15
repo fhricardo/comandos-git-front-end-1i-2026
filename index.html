@@ -10,13 +10,41 @@
 
 <body>
     <header>
-
+        <span>Comandos Git</span>
+        <span>Webdesigner Front-end</span>
     </header>
     <main>
-
+        <section>
+            <h1>Guia de Comandos Git para gerenciamento de repositórios</h1>
+            <p>Neste documento, temos a listage mdos principais comandos Git para gerenciamento de repositórios e
+                configurações necessárias para correta utilização do controle de versionamento, incluindo padrões de
+                <code>commits</code>.
+            </p>
+            <h2>Comandos de Configuração</h2>
+            <p>Para configurar o nome de usuário do Github no Git:</p>
+            <code>git config --global user.name "nome_de_usuario"</code>
+            <p>Para configurar o e-mail de usuário do Github no Git:</p>
+            <code>git config --global user.email "seu_email@dominio.com"</code>
+            <p>Para configurar <strong>"main"</strong> como nome padrão da branch principal para novos repositórios:</p>
+            <code>git config --global init.defaultBranch main</code>
+            <p>Para verificar as credenciais ativas:</p>
+            <code>git config --global --list</code>
+            <h2>Trabalhando com repositórios</h2>
+            <p>Para inicializar um repositório no diretório atual:</p>
+            <code>git init</code>
+            <p>Para adicionar o endereço do repositório remoto:</p>
+            <code>git remote add origin endereço_do_repositiorio_remoto.git</code>
+            <p>Para adicionar todos os arquivos do diretório atual (incluindo subpastas) ao repositório local:</p>
+            <code>git add .</code>
+            <p>Para adicionar uma <strong>commit</strong><sup>1</sup>:</p>
+            <code>git commit -m "texto descritivo da commit"</code>
+            <p><sup>1</sup> <em>Confira abaixo as boas práticas para criação de commits.</em></p>
+            <p>Para enviar o conteúdo do repositório local para o repositório remoto:</p>
+            <code>git push origin main</code>
+        </section>
     </main>
     <footer>
-
+        &copy;<span id="ano"></span>. Professor Flávio Ricardo.
     </footer>
 </body>
 
